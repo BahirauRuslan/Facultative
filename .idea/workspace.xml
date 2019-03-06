@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d1bb16-bcf8-4b53-a03e-b1db7c26e1a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/Jdbc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -102,11 +102,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/IDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/Jdbc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -209,58 +221,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="uml://DATABASE/f19d2f06-7003-4ffc-a9af-678827b61dbe.SCHEMA:Facultative">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>f19d2f06-7003-4ffc-a9af-678827b61dbe.SCHEMA:Facultative</OriginalElement>
-              <nodes>
-                <node x="-102.0" y="341.0">f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.courses</node>
-                <node x="42.5" y="-33.0">f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.permissions</node>
-                <node x="145.5" y="588.0">f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.courseRecords</node>
-                <node x="44.5" y="100.0">f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.accounts</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.courses" target="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.accounts">
-                  <point x="0.0" y="-64.0" />
-                  <point x="-61.0" y="88.0" />
-                </edge>
-                <edge source="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.courseRecords" target="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.courses">
-                  <point x="-43.0" y="-88.0" />
-                  <point x="129.5" y="509.0" />
-                  <point x="111.5" y="509.0" />
-                  <point x="0.0" y="64.0" />
-                </edge>
-                <edge source="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.courseRecords" target="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.accounts">
-                  <point x="43.0" y="-88.0" />
-                  <point x="212.5" y="318.0" />
-                  <point x="233.5" y="509.0" />
-                  <point x="61.0" y="88.0" />
-                </edge>
-                <edge source="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.accounts" target="f19d2f06-7003-4ffc-a9af-678827b61dbe.TABLE:Facultative.permissions">
-                  <point x="0.0" y="-88.0" />
-                  <point x="0.0" y="40.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="100.5" y="152.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -279,6 +246,7 @@
         <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/CourseRecord.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/IDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/Jdbc.java" />
       </list>
     </option>
   </component>
@@ -399,7 +367,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551861128224" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551862888597" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -506,17 +474,18 @@
       <option name="presentableId" value="Default" />
       <updated>1551631726614</updated>
       <workItem from="1551631731381" duration="3553000" />
-      <workItem from="1551850391149" duration="10830000" />
+      <workItem from="1551850391149" duration="11998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14383000" />
+    <option name="totallyTimeSpent" value="15551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -602,13 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -737,8 +699,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/IDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="120">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/Jdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
