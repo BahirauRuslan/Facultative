@@ -1,5 +1,7 @@
 package by.bntu.fitr.povt.bahirauruslan.facultative.connection;
 
+import by.bntu.fitr.povt.bahirauruslan.facultative.exceptions.DBDriverNotFoundException;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,8 +14,12 @@ public class Jdbc {
 
     private Connection connection;
 
-    public Jdbc() throws ClassNotFoundException {
-        Class.forName(DRIVER);
+    public Jdbc() throws DBDriverNotFoundException {
+        try {
+            Class.forName(DRIVER);
+        } catch (ClassNotFoundException e) {
+            throw new DBDriverNotFoundException();
+        }
     }
 
     public Connection getConnection() throws SQLException {
