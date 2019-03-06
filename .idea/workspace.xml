@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d1bb16-bcf8-4b53-a03e-b1db7c26e1a7" name="Default Changelist" comment="" />
+    <list default="true" id="45d1bb16-bcf8-4b53-a03e-b1db7c26e1a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Student.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,28 +73,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Permission.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-              <folding>
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="-805">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#285#286#0" expanded="true" />
@@ -124,11 +107,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -206,6 +198,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f19d2f06-7003-4ffc-a9af-678827b61dbe/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Permission.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Student.java" />
       </list>
     </option>
   </component>
@@ -316,7 +310,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551856321647" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551856337595" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -423,15 +417,16 @@
       <option name="presentableId" value="Default" />
       <updated>1551631726614</updated>
       <workItem from="1551631731381" duration="3553000" />
-      <workItem from="1551850391149" duration="5643000" />
+      <workItem from="1551850391149" duration="5895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9196000" />
+    <option name="totallyTimeSpent" value="9448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25338647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -529,10 +524,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Permission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="425">
+          <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
           <folding>
             <element signature="e#165#166#0" expanded="true" />
             <element signature="e#190#191#0" expanded="true" />
@@ -548,7 +550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="-805">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#285#286#0" expanded="true" />
@@ -579,10 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Teacher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/entities/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
