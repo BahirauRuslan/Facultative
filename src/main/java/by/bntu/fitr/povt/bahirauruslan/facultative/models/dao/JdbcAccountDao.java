@@ -28,6 +28,7 @@ public class JdbcAccountDao extends JdbcDao<Account> {
         account.setLogin(set.getString("login"));
         account.setHash(set.getString("passwordHash"));
         account.setFullName(set.getString("fullName"));
+        account.setPermission(JdbcPermissionDao.getInstance().get(set.getInt("permissionId")));
         account.setAvailable(set.getBoolean("isAvailable"));
         return account;
     }

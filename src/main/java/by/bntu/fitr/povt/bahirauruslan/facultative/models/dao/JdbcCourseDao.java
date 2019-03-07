@@ -25,6 +25,7 @@ public class JdbcCourseDao extends JdbcDao<Course> {
     protected Course convert(ResultSet set) throws SQLException {
         Course course = new Course();
         course.setId(set.getInt("id"));
+        course.setTeacher(JdbcAccountDao.getInstance().get(set.getInt("teacherId")));
         course.setName(set.getString("courseName"));
         course.setDescription(set.getString("courseDescription"));
         return course;

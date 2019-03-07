@@ -1,6 +1,6 @@
 package by.bntu.fitr.povt.bahirauruslan.facultative.models.entities;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class CourseRecord {
     private int id;
