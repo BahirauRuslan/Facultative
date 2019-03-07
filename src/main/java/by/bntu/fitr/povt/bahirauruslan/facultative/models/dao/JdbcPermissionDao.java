@@ -7,6 +7,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class JdbcPermissionDao extends JdbcDao<Permission> {
+    private static JdbcPermissionDao jdbcPermissionDao;
+
+    private JdbcPermissionDao() {
+
+    }
+
+    public static JdbcPermissionDao getInstance() {
+        if (jdbcPermissionDao == null) {
+            jdbcPermissionDao = new JdbcPermissionDao();
+        }
+
+        return jdbcPermissionDao;
+    }
+
     @Override
     protected Permission convert(ResultSet set) throws SQLException {
         Permission permission = new Permission();

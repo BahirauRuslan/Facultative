@@ -15,7 +15,7 @@ public class ProbeServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = new JdbcPermissionDao().getAll().get(0).getName();
+        String name = JdbcPermissionDao.getInstance().getAll().get(0).getName();
         request.setAttribute("permiss", name);
         request.getRequestDispatcher("/probe.jsp").forward(request, response);
     }

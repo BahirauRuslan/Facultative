@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class CourseRecord {
     private int id;
-    private Student student;
+    private Account student;
     private Course course;
     private Integer mark;
     private String review;
@@ -13,7 +13,7 @@ public class CourseRecord {
     public CourseRecord() {
     }
 
-    public CourseRecord(int id, Student student, Course course, Integer mark, String review, Date date) {
+    public CourseRecord(int id, Account student, Course course, Integer mark, String review, Date date) {
         this.id = id;
         this.student = student;
         this.course = course;
@@ -30,11 +30,11 @@ public class CourseRecord {
         this.id = id;
     }
 
-    public Student getStudent() {
+    public Account getStudent() {
         return student;
     }
 
-    public void setStudent(Student student) {
+    public void setStudent(Account student) {
         this.student = student;
     }
 

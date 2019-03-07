@@ -2,14 +2,14 @@ package by.bntu.fitr.povt.bahirauruslan.facultative.models.entities;
 
 public class Course {
     private int id;
-    private Teacher teacher;
+    private Account teacher;
     private String name;
     private String description;
 
     public Course() {
     }
 
-    public Course(int id, Teacher teacher, String name, String description) {
+    public Course(int id, Account teacher, String name, String description) {
         this.id = id;
         this.teacher = teacher;
         this.name = name;
@@ -24,11 +24,11 @@ public class Course {
         this.id = id;
     }
 
-    public Teacher getTeacher() {
+    public Account getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
+    public void setTeacher(Account teacher) {
         this.teacher = teacher;
     }
 

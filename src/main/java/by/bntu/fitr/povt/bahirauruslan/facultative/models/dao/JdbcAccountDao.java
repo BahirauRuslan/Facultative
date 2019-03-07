@@ -7,6 +7,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class JdbcAccountDao extends JdbcDao<Account> {
+    private static JdbcAccountDao jdbcAccountDao;
+
+    private JdbcAccountDao() {
+
+    }
+
+    public static JdbcAccountDao getInstance() {
+        if (jdbcAccountDao == null) {
+            jdbcAccountDao = new JdbcAccountDao();
+        }
+
+        return jdbcAccountDao;
+    }
+
     @Override
     protected Account convert(ResultSet set) throws SQLException {
         Account account = new Account();
