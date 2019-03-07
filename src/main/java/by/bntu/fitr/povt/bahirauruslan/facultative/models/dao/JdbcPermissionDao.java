@@ -27,7 +27,7 @@ public class JdbcPermissionDao extends JdbcDao<Permission> {
 
     @Override
     protected void setToUpdateStatement(PreparedStatement statement, Permission permission) throws SQLException {
-        statement.setString(1, permission.getName());
+        setToAddStatement(statement, permission);
         statement.setInt(2, permission.getId());
     }
 
