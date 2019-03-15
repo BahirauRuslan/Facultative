@@ -3,6 +3,7 @@ package by.bntu.fitr.povt.bahirauruslan.facultative.models.services.guest;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.dao.IDao;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.dao.JdbcAccountDao;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.Account;
+import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.registration.RegistrationResult;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.authentication.AuthenticationResult;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.authentication.PasswordAuthentication;
 
@@ -37,6 +38,11 @@ public class AccountService {
 
         return AuthenticationResult.valueOf(account.getPermission().getName().toUpperCase());
     }
+
+//    public RegistrationResult registration(String login, String password,
+//                                           String password_repeat, String fullName) {
+//        ;
+//    }
 
     private Account findAccount(String login) {
         List<Account> accounts = dao.getAll();
