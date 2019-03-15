@@ -39,13 +39,39 @@ public class AccountService {
         return AuthenticationResult.valueOf(account.getPermission().getName().toUpperCase());
     }
 
-//    public RegistrationResult registration(String login, String password,
-//                                           String password_repeat, String fullName) {
-//        ;
-//    }
+    public RegistrationResult registration(String login, String password,
+                                           String password_repeat, String fullName) {
+        if (login == null || login.length() < 5 || login.length() > 50) {
+            return RegistrationResult.INCORRECT_LOGIN;
+        }
+
+        if (login.equals(findAccount(login).getLogin())) {
+            return RegistrationResult.EXISTING_LOGIN;
+        }
+
+        if (password == null || password.length() < 6 || password.length() > 32) {
+            return RegistrationResult.INCORRECT_PASSWORD;
+        }
+
+        if (!password.equals(password_repeat)) {
+            return RegistrationResult.INCORRECT_REPEAT_PASSWORD;
+        }
+
+        if (fullName == null || fullName.length() < 5 || fullName.length() > 50) {
+            return RegistrationResult.INCORRECT_FULLNAME;
+        }
+
+        Account account = new Account();
+        PasswordAuthentication authentication = new PasswordAuthentication();
+        account.setLogin(login);
+        account.setHash(authentication.hash(password.toCharArray()));
+        account.setFullName(fullName);
+        addAccount(account);
+        return RegistrationResult.OK;
+    }
 
     private Account findAccount(String login) {
-        List<Account> accounts = dao.getAll();
+        List<Account> accounts = getAllAccounts();
         for (Account account : accounts) {
             if (account.getLogin().equals(login)) {
                 return account;
