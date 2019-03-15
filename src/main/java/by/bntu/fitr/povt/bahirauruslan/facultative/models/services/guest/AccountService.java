@@ -3,8 +3,9 @@ package by.bntu.fitr.povt.bahirauruslan.facultative.models.services.guest;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.dao.IDao;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.dao.JdbcAccountDao;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.Account;
+import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.authentication.AuthenticationResult;
+import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.authentication.PasswordAuthentication;
 
-//import javax.security.enterprise.authentication.mechanism.http.;
 import java.util.List;
 
 public class AccountService {
@@ -18,7 +19,32 @@ public class AccountService {
         return dao.add(account);
     }
 
-//    private String hashPassword(String password) {
-//        return new Pbkdf2PasswordHash().generate(password.toCharArray());
-//    }
+    public AuthenticationResult authenticate(String login, String password) {
+        Account account = findAccount(login);
+        PasswordAuthentication authentication = new PasswordAuthentication();
+
+        if (account.getLogin() == null || account.getLogin().equals("")) {
+            return AuthenticationResult.USER_DOES_NOT_EXIST;
+        }
+
+        if (!authentication.authenticate(password.toCharArray(), account.getHash())) {
+            return AuthenticationResult.PASSWORD_CHECK_FAILED;
+        }
+
+        if (!account.isAvailable()) {
+            return AuthenticationResult.ACCOUNT_DISABLED;
+        }
+
+        return AuthenticationResult.valueOf(account.getPermission().getName().toUpperCase());
+    }
+
+    private Account findAccount(String login) {
+        List<Account> accounts = dao.getAll();
+        for (Account account : accounts) {
+            if (account.getLogin().equals(login)) {
+                return account;
+            }
+        }
+        return new Account();
+    }
 }
