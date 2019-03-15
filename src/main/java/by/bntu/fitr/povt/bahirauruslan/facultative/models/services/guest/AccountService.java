@@ -66,6 +66,8 @@ public class AccountService {
         account.setLogin(login);
         account.setHash(authentication.hash(password.toCharArray()));
         account.setFullName(fullName);
+        account.setPermission((new PermissionService()).getByName("Student"));
+        account.setAvailable(true);
         addAccount(account);
         return RegistrationResult.OK;
     }
