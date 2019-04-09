@@ -12,5 +12,13 @@
 </head>
 <body>
     <p>${permiss}</p>
+    <form action="" method="POST">
+        <h2>Регистрация</h2>
+        <p>Логин<br><input type="text" name="login" autocomplete="off"></p>
+        <p>Полное имя<br><input type="text" name="fullName" autocomplete="off"></p>
+        <p>Пароль<br><input type="password" name="password"></p>
+        <p>Подтверждение пароля<br><input type="password" name="password2"></p>
+        <button type="submit" name="do_registration">Зарегистрироваться</button>
+    </form>
 </body>
 </html>

@@ -18,7 +18,7 @@ public abstract class JdbcDao<T> implements IDao<T, Integer> {
             while (set.next()) {
                 list.add(convert(set));
             }
-            ConnectionPull.INSTANCE.putBack(connection);
+            //ConnectionPull.INSTANCE.putBack(connection);
         } catch (Exception e) {
             //TODO: add logger
         }
@@ -36,7 +36,7 @@ public abstract class JdbcDao<T> implements IDao<T, Integer> {
             while (set.next()) {
                 t = convert(set);
             }
-            ConnectionPull.INSTANCE.putBack(connection);
+            //ConnectionPull.INSTANCE.putBack(connection);
         } catch (Exception e) {
             //TODO: add logger
         }
@@ -50,7 +50,7 @@ public abstract class JdbcDao<T> implements IDao<T, Integer> {
              PreparedStatement statement = connection.prepareStatement(addStatementSQL())) {
             setToAddStatement(statement, entity);
             commitUpdates(connection,statement);
-            ConnectionPull.INSTANCE.putBack(connection);
+            //ConnectionPull.INSTANCE.putBack(connection);
             return true;
         } catch (Exception e) {
             //TODO: add logger
@@ -64,7 +64,7 @@ public abstract class JdbcDao<T> implements IDao<T, Integer> {
              PreparedStatement statement = connection.prepareStatement(deleteStatementSQL())) {
             setToDeleteStatement(statement, entity);
             statement.execute();
-            ConnectionPull.INSTANCE.putBack(connection);
+            //ConnectionPull.INSTANCE.putBack(connection);
             return true;
         } catch (Exception e) {
             //TODO: add logger
@@ -78,7 +78,7 @@ public abstract class JdbcDao<T> implements IDao<T, Integer> {
              PreparedStatement statement = connection.prepareStatement(updateStatementSQL())) {
             setToUpdateStatement(statement, entity);
             commitUpdates(connection, statement);
-            ConnectionPull.INSTANCE.putBack(connection);
+            //ConnectionPull.INSTANCE.putBack(connection);
             return true;
         } catch (Exception e) {
             //TODO: add logger

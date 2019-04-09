@@ -11,4 +11,13 @@
         <servlet-name>ProbeServlet</servlet-name>
         <url-pattern>/probe</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProbeAutServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.ProbeAutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProbeAutServlet</servlet-name>
+        <url-pattern>/probeaut</url-pattern>
+    </servlet-mapping>
 </web-app>
