@@ -35,11 +35,13 @@ public class JdbcCourseRecordDao extends JdbcDao<CourseRecord> {
 
     @Override
     protected void setToAddStatement(PreparedStatement statement, CourseRecord courseRecord) throws SQLException {
+//        statement.setInt(1, courseRecord.getCourse().getId());
+//        statement.setInt(2, courseRecord.getStudent().getId());
+//        statement.setInt(3, courseRecord.getMark());
+//        statement.setString(4, courseRecord.getReview());
+//        statement.setDate(5, courseRecord.getDate());
         statement.setInt(1, courseRecord.getCourse().getId());
         statement.setInt(2, courseRecord.getStudent().getId());
-        statement.setInt(3, courseRecord.getMark());
-        statement.setString(4, courseRecord.getReview());
-        statement.setDate(5, courseRecord.getDate());
     }
 
     @Override
@@ -50,6 +52,9 @@ public class JdbcCourseRecordDao extends JdbcDao<CourseRecord> {
     @Override
     protected void setToUpdateStatement(PreparedStatement statement, CourseRecord courseRecord) throws SQLException {
         setToAddStatement(statement, courseRecord);
+        statement.setInt(3, courseRecord.getMark());//
+        statement.setString(4, courseRecord.getReview());//
+        statement.setDate(5, courseRecord.getDate());//
         statement.setInt(6, courseRecord.getId());
     }
 
@@ -65,7 +70,8 @@ public class JdbcCourseRecordDao extends JdbcDao<CourseRecord> {
 
     @Override
     protected String addStatementSQL() {
-        return "INSERT INTO courseRecords (courseId, studentId, mark, review, finishDate) VALUES (?, ?, ?, ?, ?)";
+        return "INSERT INTO courseRecords (courseId, studentId) VALUES (?, ?)";
+        //return "INSERT INTO courseRecords (courseId, studentId, mark, review, finishDate) VALUES (?, ?, ?, ?, ?)";
     }
 
     @Override

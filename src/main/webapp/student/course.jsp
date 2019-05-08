@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import ="java.util.*" %>
 <%@ page import ="by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.*" %>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>Faculties</title>
+    <title>Course</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,20 +35,29 @@
 <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000;">
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/Facultative">Courses</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Facultative/student/courses">Courses<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Facultative/student/mycourses">My courses<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <jsp:include page="nav.jsp"></jsp:include>
+        <form class="form-inline my-2 my-lg-0" action="" method="post">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Log out</button>
+        </form>
     </div>
 </nav>
-<div class="list-group">
-    <%
-        List<Course> courses =  (List<Course>)request.getAttribute("courses");
-        for (Course course : courses) { %>
-    <a href="/Facultative/course?id=<%=course.getId()%>" class="list-group-item list-group-item-action">
-        <%=course.getName()%></a>
-    <%}%>
+
+<div class="card" style="width: 60vw; margin-left: 20vw; margin-top: 3vw;">
+    <div class="card-body">
+        <h5 class="card-title"><%=((Course)request.getAttribute("course")).getName()%></h5>
+        <h6 class="card-text"><%=((Course)request.getAttribute("course")).getTeacher().getFullName()%></h6>
+        <p class="card-text"><%=((Course)request.getAttribute("course")).getDescription()%></p>
+        <form class="form-inline my-2 my-lg-0" action="" method="post">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="subscribe" type="submit">Subscribe</button>
+        </form>
+    </div>
 </div>
+
 </body>
 </html>

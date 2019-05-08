@@ -10,7 +10,7 @@
 <%@ page import ="by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.*" %>
 <html lang="en">
 <head>
-    <title>Faculties</title>
+    <title>Accounts</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,20 +35,28 @@
 <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000;">
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/Facultative">Courses</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Facultative/admin/accounts">Аккаунты<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Facultative/admin/courses">Курсы<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <jsp:include page="nav.jsp"></jsp:include>
+        <form class="form-inline my-2 my-lg-0" action="" method="post">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Выйти</button>
+        </form>
     </div>
 </nav>
+
 <div class="list-group">
     <%
-        List<Course> courses =  (List<Course>)request.getAttribute("courses");
-        for (Course course : courses) { %>
-    <a href="/Facultative/course?id=<%=course.getId()%>" class="list-group-item list-group-item-action">
-        <%=course.getName()%></a>
-    <%}%>
+        List<Account> accounts =  (List<Account>)request.getAttribute("accounts");
+        for (Account account : accounts) { %>
+         <a href="/Facultative/admin/account?id=<%=account.getId()%>" class="list-group-item list-group-item-action">
+                            <%=account.getLogin() + " - " + account.getFullName() + " ["
+                            + account.getPermission().getName() + "]"%></a>
+        <%}%>
 </div>
+
 </body>
 </html>

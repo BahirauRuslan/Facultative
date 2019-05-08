@@ -9,7 +9,7 @@ import java.util.Vector;
 
 public enum ConnectionPull {
     INSTANCE;
-    private static final int UPPER_BOUND_COUNT = 100;
+    private static final int UPPER_BOUND_COUNT = 2000;
 
     private Vector<Connection> availableConnections = new Vector<>();
     private Vector<Connection> usedConnections = new Vector<>();

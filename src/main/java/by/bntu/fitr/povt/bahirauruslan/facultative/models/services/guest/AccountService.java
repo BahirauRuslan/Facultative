@@ -8,6 +8,7 @@ import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.authentication.Au
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.authentication.PasswordAuthentication;
 
 import java.util.List;
+import javax.servlet.http.HttpSession;
 
 public class AccountService {
     private IDao<Account, Integer> dao = JdbcAccountDao.getInstance();
@@ -18,6 +19,15 @@ public class AccountService {
 
     public boolean addAccount(Account account) {
         return dao.add(account);
+    }
+
+    public void authorization(HttpSession session, String login, String password, String attributeName) {
+        AuthenticationResult result = authenticate(login, password);
+        if (result != AuthenticationResult.USER_DOES_NOT_EXIST
+                && result != AuthenticationResult.PASSWORD_CHECK_FAILED
+                && result != AuthenticationResult.ACCOUNT_DISABLED) {
+            session.setAttribute(attributeName, findAccount(login));
+        }
     }
 
     public AuthenticationResult authenticate(String login, String password) {

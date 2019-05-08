@@ -53,7 +53,7 @@ public abstract class JdbcDao<T> implements IDao<T, Integer> {
             //ConnectionPull.INSTANCE.putBack(connection);
             return true;
         } catch (Exception e) {
-            //TODO: add logger
+            System.out.println("UUUUUUUUUUUUAAAAAAAAAAAAA" + e);
             return false;
         }
     }

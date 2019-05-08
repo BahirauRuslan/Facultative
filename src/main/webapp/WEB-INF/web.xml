@@ -4,20 +4,138 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>ProbeServlet</servlet-name>
-        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.ProbeServlet</servlet-class>
+        <servlet-name>FrontServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.FrontServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ProbeServlet</servlet-name>
-        <url-pattern>/probe</url-pattern>
+        <servlet-name>FrontServlet</servlet-name>
+        <url-pattern/>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>ProbeAutServlet</servlet-name>
-        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.ProbeAutServlet</servlet-class>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.RegistrationServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ProbeAutServlet</servlet-name>
-        <url-pattern>/probeaut</url-pattern>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/registration</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminAccountsServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.AdminAccountsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminAccountsServlet</servlet-name>
+        <url-pattern>/admin/accounts</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminAccountServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.AdminAccountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminAccountServlet</servlet-name>
+        <url-pattern>/admin/account</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminCoursesServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.AdminCoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminCoursesServlet</servlet-name>
+        <url-pattern>/admin/courses</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminAddCourseServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.AdminAddCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminAddCourseServlet</servlet-name>
+        <url-pattern>/admin/courseadd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminCourseServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.AdminCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminCourseServlet</servlet-name>
+        <url-pattern>/admin/course</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherCoursesServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.TeacherCoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherCoursesServlet</servlet-name>
+        <url-pattern>/teacher/courses</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherCourseServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.TeacherCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherCourseServlet</servlet-name>
+        <url-pattern>/teacher/course</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherCourserecServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.TeacherCourserecServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherCourserecServlet</servlet-name>
+        <url-pattern>/teacher/courserec</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FrontCourseServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.FrontCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FrontCourseServlet</servlet-name>
+        <url-pattern>/course</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentCoursesServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.StudentCoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentCoursesServlet</servlet-name>
+        <url-pattern>/student/courses</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentCourseServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.StudentCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentCourseServlet</servlet-name>
+        <url-pattern>/student/course</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentMyCoursesServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.StudentMyCoursesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentMyCoursesServlet</servlet-name>
+        <url-pattern>/student/mycourses</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentMyCourseServlet</servlet-name>
+        <servlet-class>by.bntu.fitr.povt.bahirauruslan.facultative.controllers.StudentMyCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentMyCourseServlet</servlet-name>
+        <url-pattern>/student/mycourse</url-pattern>
+    </servlet-mapping>
+
 </web-app>

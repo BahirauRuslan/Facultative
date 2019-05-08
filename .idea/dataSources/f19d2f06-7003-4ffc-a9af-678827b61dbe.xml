@@ -869,6 +869,8 @@
       <RefSchemaName>Facultative</RefSchemaName>
       <RefTableName>permissions</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="217" parent="205" name="id">
       <Position>1</Position>
@@ -922,12 +924,16 @@
       <RefSchemaName>Facultative</RefSchemaName>
       <RefTableName>courses</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <foreign-key id="227" parent="205" name="courseRecords_accounts_id_fk">
       <ColNames>studentId</ColNames>
       <RefSchemaName>Facultative</RefSchemaName>
       <RefTableName>accounts</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="228" parent="206" name="id">
       <Position>1</Position>
@@ -967,6 +973,8 @@
       <RefSchemaName>Facultative</RefSchemaName>
       <RefTableName>accounts</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="235" parent="207" name="id">
       <Position>1</Position>

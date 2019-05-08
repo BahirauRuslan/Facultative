@@ -6,11 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import ="java.util.*" %>
 <%@ page import ="by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.*" %>
 <html lang="en">
 <head>
-    <title>Faculties</title>
+    <title>Account</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,20 +34,34 @@
 <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000;">
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/Facultative">Courses</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Facultative/admin/accounts">Аккаунты<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Facultative/admin/courses">Курсы<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <jsp:include page="nav.jsp"></jsp:include>
+        <form class="form-inline my-2 my-lg-0" action="" method="post">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Выйти</button>
+        </form>
     </div>
 </nav>
-<div class="list-group">
-    <%
-        List<Course> courses =  (List<Course>)request.getAttribute("courses");
-        for (Course course : courses) { %>
-    <a href="/Facultative/course?id=<%=course.getId()%>" class="list-group-item list-group-item-action">
-        <%=course.getName()%></a>
-    <%}%>
-</div>
+
+<form method="post" style="margin-top: 20px; margin-left: 30vw; width: 40vw">
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Разрешение аккаунта</label>
+        <select class="form-control" name="permission" id="exampleFormControlSelect1">
+            <option>Student</option>
+            <option>Teacher</option>
+        </select>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" name="isAvailable" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Аккаунт активен</label>
+    </div>
+    <button type="submit" name="sumbitChanges" class="btn btn-primary">Подтвердить изменения</button>
+    <button type="submit" name="deleteAccount" class="btn btn-primary">Удалить аккаунт</button>
+</form>
+
 </body>
 </html>

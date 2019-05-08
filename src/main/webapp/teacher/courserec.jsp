@@ -10,7 +10,7 @@
 <%@ page import ="by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.*" %>
 <html lang="en">
 <head>
-    <title>Faculties</title>
+    <title>Course record</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,20 +35,39 @@
 <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000;">
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/Facultative">Courses</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Facultative/teacher/courses">Курсы<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <jsp:include page="nav.jsp"></jsp:include>
+        <form class="form-inline my-2 my-lg-0" action="" method="post">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Выйти</button>
+        </form>
     </div>
 </nav>
-<div class="list-group">
-    <%
-        List<Course> courses =  (List<Course>)request.getAttribute("courses");
-        for (Course course : courses) { %>
-    <a href="/Facultative/course?id=<%=course.getId()%>" class="list-group-item list-group-item-action">
-        <%=course.getName()%></a>
-    <%}%>
-</div>
+
+<form method="post" style="margin-top: 20px; margin-left: 30vw; width: 40vw">
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Mark</label>
+        <select class="form-control" name="mark" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Review</label>
+        <textarea class="form-control" name="review" id="exampleFormControlTextarea1" rows="3">
+            <%=((CourseRecord)request.getAttribute("courseRecord")).getReview()%></textarea>
+    </div>
+    <button type="submit" name="sumbitChanges" class="btn btn-primary">Submit changes</button>
+</form>
+
 </body>
 </html>

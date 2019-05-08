@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import ="java.util.*" %>
 <%@ page import ="by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.*" %>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>Faculties</title>
+    <title>((Course)request.getAttribute("course")).getName()</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,13 +42,14 @@
         <jsp:include page="nav.jsp"></jsp:include>
     </div>
 </nav>
-<div class="list-group">
-    <%
-        List<Course> courses =  (List<Course>)request.getAttribute("courses");
-        for (Course course : courses) { %>
-    <a href="/Facultative/course?id=<%=course.getId()%>" class="list-group-item list-group-item-action">
-        <%=course.getName()%></a>
-    <%}%>
+
+<div class="card" style="width: 60vw; margin-left: 20vw; margin-top: 3vw;">
+    <div class="card-body">
+        <h5 class="card-title"><%=((Course)request.getAttribute("course")).getName()%></h5>
+        <h6 class="card-text"><%=((Course)request.getAttribute("course")).getTeacher().getFullName()%></h6>
+        <p class="card-text"><%=((Course)request.getAttribute("course")).getDescription()%></p>
+    </div>
 </div>
+
 </body>
 </html>

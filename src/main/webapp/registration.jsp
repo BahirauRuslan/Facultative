@@ -6,11 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import ="java.util.*" %>
-<%@ page import ="by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.*" %>
 <html lang="en">
 <head>
-    <title>Faculties</title>
+    <title>Registration</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,23 +30,25 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000;">
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/Facultative">Courses</a>
-            </li>
-        </ul>
-        <jsp:include page="nav.jsp"></jsp:include>
+<form style="margin-left: 33vw; width: 33vw" action="" method="post">
+    <div class="form-group">
+        <label for="login">Логин</label>
+        <input type="text" class="form-control" id="login" name="login" placeholder="Введите логин">
     </div>
-</nav>
-<div class="list-group">
-    <%
-        List<Course> courses =  (List<Course>)request.getAttribute("courses");
-        for (Course course : courses) { %>
-    <a href="/Facultative/course?id=<%=course.getId()%>" class="list-group-item list-group-item-action">
-        <%=course.getName()%></a>
-    <%}%>
-</div>
+    <div class="form-group">
+        <label for="fullName">Имя</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Введите полное имя">
+    </div>
+    <div class="form-group">
+        <label for="password">Пароль</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Пароль">
+    </div>
+    <div class="form-group">
+        <label for="password2">Подтверждение пароля</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Введите пароль еще раз">
+    </div>
+    <button type="submit" class="btn btn-primary">Регистрация</button>
+    <button class="btn btn-primary" style="color: bisque"><a href="/Facultative">На главную</a></button>
+</form>
 </body>
 </html>
