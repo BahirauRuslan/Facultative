@@ -6,22 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d1bb16-bcf8-4b53-a03e-b1db7c26e1a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/account.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f19d2f06-7003-4ffc-a9af-678827b61dbe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f19d2f06-7003-4ffc-a9af-678827b61dbe.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/ConnectionPull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/ConnectionPull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/connection/Jdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/controllers/ProbeAutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/controllers/ProbeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/JdbcCourseRecordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/JdbcCourseRecordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/JdbcDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/dao/JdbcDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/services/guest/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bntu/fitr/povt/bahirauruslan/facultative/models/services/guest/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/probe.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/probeaut.jsp" beforeDir="false" />
-    </list>
+    <list default="true" id="45d1bb16-bcf8-4b53-a03e-b1db7c26e1a7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,7 +160,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="441">
               <caret line="137" column="38" lean-forward="true" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
             </state>
           </provider>
@@ -497,7 +482,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557338318016" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557338337702" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -625,12 +610,12 @@
       <workItem from="1557149533661" duration="4025000" />
       <workItem from="1557153654371" duration="8556000" />
       <workItem from="1557218582845" duration="18221000" />
-      <workItem from="1557319140097" duration="18722000" />
+      <workItem from="1557319140097" duration="18992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130068000" />
+    <option name="totallyTimeSpent" value="130338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -645,7 +630,7 @@
       <window_info id="Web" order="7" sideWeight="0.5196305" side_tool="true" weight="0.34023905" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1118,7 +1103,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state relative-caret-position="441">
           <caret line="137" column="38" lean-forward="true" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
         </state>
       </provider>
