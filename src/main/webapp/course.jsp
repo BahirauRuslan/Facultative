@@ -10,7 +10,7 @@
 <%@ page import ="by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.*" %>
 <html lang="ru">
 <head>
-    <title>((Course)request.getAttribute("course")).getName()</title>
+    <title>Course</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
