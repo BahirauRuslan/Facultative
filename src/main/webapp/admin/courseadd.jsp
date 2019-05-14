@@ -36,29 +36,29 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="/Facultative/admin/accounts">Аккаунты<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/Facultative/admin/accounts">Accounts<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/Facultative/admin/courses">Курсы<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/Facultative/admin/courses">Courses<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="" method="post">
-            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Выйти</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Log out</button>
         </form>
     </div>
 </nav>
 
 <form method="post" style="margin-top: 20px; margin-left: 30vw; width: 40vw">
     <div class="form-group">
-        <label for="fullName">Название курса</label>
-        <input type="text" class="form-control" id="fullName" name="name" placeholder="Введите название курса">
+        <label for="fullName">Course name</label>
+        <input type="text" class="form-control" id="fullName" name="name" placeholder="Enter course name">
     </div>
     <div class="form-group">
-        <label for="exampleFormControlTextarea1">Описание курса</label>
+        <label for="exampleFormControlTextarea1">Course description</label>
         <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Преподаватель</label>
+        <label for="exampleFormControlSelect1">Teacher</label>
         <select class="form-control" name="teacher" id="exampleFormControlSelect1">
             <%List<Account> teachers = (List<Account>)request.getAttribute("teachers");
                 for (Account teacher : teachers) {
@@ -67,7 +67,7 @@
             <%}%>
         </select>
     </div>
-    <button type="submit" name="addCourse" class="btn btn-primary">Добавить</button>
+    <button type="submit" name="addCourse" class="btn btn-primary">Add</button>
 </form>
 
 </body>
