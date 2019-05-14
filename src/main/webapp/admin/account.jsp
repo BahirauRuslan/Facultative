@@ -35,21 +35,21 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="/Facultative/admin/accounts">Аккаунты<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/Facultative/admin/accounts">Accounts<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/Facultative/admin/courses">Курсы<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/Facultative/admin/courses">Courses<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="" method="post">
-            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Выйти</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" name="do_logout" type="submit">Log out</button>
         </form>
     </div>
 </nav>
 
 <form method="post" style="margin-top: 20px; margin-left: 30vw; width: 40vw">
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Разрешение аккаунта</label>
+        <label for="exampleFormControlSelect1">Account permission</label>
         <select class="form-control" name="permission" id="exampleFormControlSelect1">
             <option>Student</option>
             <option>Teacher</option>
@@ -57,7 +57,7 @@
     </div>
     <div class="form-group form-check">
         <input type="checkbox" name="isAvailable" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Аккаунт активен</label>
+        <label class="form-check-label" for="exampleCheck1">Enabled account</label>
     </div>
     <button type="submit" name="sumbitChanges" class="btn btn-primary">Подтвердить изменения</button>
     <button type="submit" name="deleteAccount" class="btn btn-primary">Удалить аккаунт</button>
