@@ -1,11 +1,7 @@
 package by.bntu.fitr.povt.bahirauruslan.facultative.controllers;
 
-import by.bntu.fitr.povt.bahirauruslan.facultative.controllers.actions.Action;
-import by.bntu.fitr.povt.bahirauruslan.facultative.controllers.actions.ActionFactory;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.Account;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.services.guest.*;
-import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.registration.RegistrationResult;
-import by.bntu.fitr.povt.bahirauruslan.facultative.view.View;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
