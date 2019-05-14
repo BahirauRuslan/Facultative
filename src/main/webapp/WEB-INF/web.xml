@@ -138,4 +138,13 @@
         <url-pattern>/student/mycourse</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>adminFilter</filter-name>
+        <filter-class>by.bntu.fitr.povt.bahirauruslan.facultative.filters.AdminFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>adminFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
