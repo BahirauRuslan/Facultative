@@ -32,23 +32,23 @@
         crossorigin="anonymous"></script>
 <form style="margin-left: 33vw; width: 33vw" action="" method="post">
     <div class="form-group">
-        <label for="login">Логин</label>
-        <input type="text" class="form-control" id="login" name="login" placeholder="Введите логин">
+        <label for="login">Login</label>
+        <input type="text" class="form-control" id="login" name="login" placeholder="Enter login">
     </div>
     <div class="form-group">
-        <label for="fullName">Имя</label>
-        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Введите полное имя">
+        <label for="fullName">Name</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter full name">
     </div>
     <div class="form-group">
-        <label for="password">Пароль</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Пароль">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
     </div>
     <div class="form-group">
-        <label for="password2">Подтверждение пароля</label>
-        <input type="password" class="form-control" id="password2" name="password2" placeholder="Введите пароль еще раз">
+        <label for="password2">Repeat password</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Repeat password">
     </div>
-    <button type="submit" class="btn btn-primary">Регистрация</button>
-    <button class="btn btn-primary" style="color: bisque"><a href="/Facultative">На главную</a></button>
+    <button type="submit" class="btn btn-primary">Sign up</button>
+    <button class="btn btn-primary"><a style="color: white" href="/Facultative">Main page</a></button>
 </form>
 </body>
 </html>
