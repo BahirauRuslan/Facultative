@@ -1,11 +1,6 @@
 package by.bntu.fitr.povt.bahirauruslan.facultative.controllers;
 
-import by.bntu.fitr.povt.bahirauruslan.facultative.controllers.actions.Action;
-import by.bntu.fitr.povt.bahirauruslan.facultative.controllers.actions.ActionFactory;
-import by.bntu.fitr.povt.bahirauruslan.facultative.models.entities.Account;
 import by.bntu.fitr.povt.bahirauruslan.facultative.models.services.admin.AccountService;
-import by.bntu.fitr.povt.bahirauruslan.facultative.models.util.registration.RegistrationResult;
-import by.bntu.fitr.povt.bahirauruslan.facultative.view.View;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.*;
 
 @WebServlet(name = "AdminAccountsServlet")
 public class AdminAccountsServlet extends HttpServlet {
